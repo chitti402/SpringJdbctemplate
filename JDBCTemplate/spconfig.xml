@@ -11,9 +11,7 @@
  	</bean>
  	
  	<bean id="id2" class="org.springframework.jdbc.core.JdbcTemplate">
-		 <constructor-arg>
-		   	<ref bean="id1"/>
-		 </constructor-arg>    
+		 <constructor-arg ref bean="id1"/>    
  	</bean>
  	
     <bean id="id3" class="java4s.SpringJdbcCreateTable">
