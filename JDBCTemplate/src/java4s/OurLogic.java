@@ -11,6 +11,7 @@ public class OurLogic
 	{
 		Resource res = new ClassPathResource("spconfig.xml");
 		BeanFactory factory = new XmlBeanFactory(res);
+		//jdbc template
 		SpringJdbcCreateTable st =(SpringJdbcCreateTable)factory.getBean("id3");
 		st.createTable();
 	}
